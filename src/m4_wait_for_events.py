@@ -30,8 +30,8 @@ Ultimately you should be comfortable with both approaches.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Elijah Huff.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import math
 
@@ -99,15 +99,21 @@ def sum_until_prime_input():
          The sum of the input integers is: 167
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+    x = int(input('pick a number greater than 1'))
+    tot = 0
+    tot = tot + x
+    prime = is_prime(x)
+    while prime is True:
+        print(tot)
 
 
 def run_test_next_prime():
     """ Tests the   next_prime    function. """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement this TEST function.
+    # DONE: 3. Implement this TEST function.
     #   It TESTS the  wait_for_prime  function defined below.
     #   Include at least  ** 6 **  tests. (We supplied 5 tests for you.)
     #
@@ -164,7 +170,7 @@ def run_test_next_prime():
     print('Actual:  ', actual)
     print('TEST ENDED!')
 
-    # TODO 3 (continued):
+    # DONE 3 (continued):
     #   PUT YOUR TEST   ** IN THE SPACE BETWEEN **   the
     #   print('TEST STARTED!' ...) and print('TEST ENDED') lines below.
 
@@ -190,7 +196,7 @@ def next_prime(m):
       :type m: int
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     # IMPLEMENTATION REQUIREMENT:
@@ -327,7 +333,7 @@ def prime_gap(m):
       :type m: int
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # IMPLEMENTATION REQUIREMENT:
@@ -339,7 +345,7 @@ def prime_gap(m):
 def run_test_wait_for_sum_of_cubes():
     """ Tests the   wait_for_sum_of_cubes    function. """
     # -------------------------------------------------------------------------
-    # TODO: 6. Implement this TEST function.
+    # DONE: 6. Implement this TEST function.
     #   It TESTS the  wait_for_sum_of_cubes  function defined below.
     #   Include at least  ** 8 **  tests. (We supplied 6 tests for you.)
     #
@@ -405,7 +411,7 @@ def run_test_wait_for_sum_of_cubes():
     print('Actual:  ', actual)
     print('TEST ENDED!')
 
-    # TODO 6 (continued):
+    # DONE 6 (continued):
     #   PUT YOUR TEST   ** IN THE SPACE BETWEEN **   the
     #   print('TEST STARTED!' ...) and print('TEST ENDED') lines below.
     #
@@ -418,7 +424,7 @@ def run_test_wait_for_sum_of_cubes():
 
     print('TEST ENDED!')
 
-    # TODO 6 (continued):
+    # DONE 6 (continued):
     #   PUT YOUR TEST   ** IN THE SPACE BETWEEN **  the
     #   print('TEST STARTED!' ...) and print('TEST ENDED') lines below.
 
@@ -463,7 +469,7 @@ def wait_for_sum_of_cubes(x):
       :type x: float  [or an int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # DONE: 7. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     # IMPLEMENTATION REQUIREMENT:
